@@ -4,21 +4,16 @@ import java.io.DataInput
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
 
-    var input = readln().toInt()
-    multip(input)
-}
+    multip(2)
 
+}
 fun multip (Number:Int):Int{
 
-    val n =  Number %2
-    var multip:Int = 0
-    if (n == 0){
-        multip = Number * 8
-        println("This number is pair= ${multip}")
-    }else if (n == 1){
-        multip = Number * 9
-        println("This number is inpair= ${multip}")
+    if (Number % 2 == 0) {
+        println("${Number * 8}")
+        return Number * 8
+    } else {
+        println("${Number * 8}")
+        return Number * 9
     }
-
-    return  multip
 }
